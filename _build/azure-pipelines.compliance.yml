@@ -44,6 +44,7 @@ extends:
                 submodules: false
                 retryCountOnTaskFailure: 3
 
-              - task: ComponentGovernanceComponentDetection@0
-                condition: succeededOrFailed()
-                continueOnError: True
+              -- task: ComponentGovernanceComponentDetection@0
+                    displayName: Run Component Governance Detection
+                      condition: succeededOrFailed()
+                    continueOnError: true
